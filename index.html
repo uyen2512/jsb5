@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buoi5JS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="bai1-tab" data-toggle="pill" data-target="#bai1" type="button"
+                    role="tab" aria-controls="bai1" aria-selected="true">Bài 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bai2-tab" data-toggle="pill" data-target="#bai2" type="button" role="tab"
+                    aria-controls="bai2" aria-selected="false">Bài 2</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="bai1-tab">
+                <h3>Bài 1: Quản lý tuyển sinh</h3>
+                <div class="w-50">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="diemChuan">Điểm chuẩn:</label>
+                            <input type="number" class="form-control" name="" id="diemChuan">
+                        </div>
+                        <select class="form-control" id="selectAdd">
+                            <option value="0">--Chọn khu vực--</option>
+                            <option value="2">Khu Vực A</option>
+                            <option value="1">Khu Vực B</option>
+                            <option value="0.5">Khu Vực C</option>
+                        </select>
+                        <select class="form-control mt-4" id="selectPer">
+                            <option value="0">--Chọn đối tượng--</option>
+                            <option value="2.5">Đối tượng 1</option>
+                            <option value="1.5">Đối tượng 2</option>
+                            <option value="1">Đối tượng 3</option>
+                        </select>
+                        <div class="form-group">
+                            <label for="diem1">Nhập điểm môn thứ nhất:</label>
+                            <input type="number" class="form-control" name="" id="diem1">
+                        </div>
+                        <div class="form-group">
+                            <label for="diem2">Nhập điểm môn thứ hai:</label>
+                            <input type="number" class="form-control" name="" id="diem2">
+                        </div>
+                        <div class="form-group">
+                            <label for="diem3">Nhập điểm môn thứ ba:</label>
+                            <input type="number" class="form-control" name="" id="diem3">
+                        </div>
+                    </form>
+                    <button onclick="ketQuaDiem()" class="btn btn-success">Kết quả</button>
+                    <div class="mt-2 alert alert-success">
+                        <span id="btnKetQua"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="bai2-tab">
+                <h3>Bài 2: Tính giá trị trung bình</h3>
+                <div class="w-50">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="ten">Nhập Tên:</label>
+                            <input type="text" class="form-control" name="" id="ten">
+                        </div>
+                        <div class="form-group">
+                            <label for="soKw">Nhập số Kw:</label>
+                            <input class="form-control" type="number" name="" id="soKw">
+                        </div>
+                    </form>
+                    <button onclick="tinhTienDien()" class="btn btn-success mt-2">Tính Tiền</button>
+                    <div class="mt-2 alert alert-success">
+                        <span id="btnTinhKw"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
